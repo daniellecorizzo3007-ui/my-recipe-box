@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ultimate Bakery-Style Twix Caramel Lava Cookies</title>
+<style>
+:root{--green:#0b8f4d;--green-light:#eaf7f0;--blue:#1457b8;--ink:#1f2937;--muted:#5b6472;--line:#d8dee8;--panel:#fff;--bg:#f7f4ef;--warning:#fff7d6}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+.wrap{width:min(1180px,94%);margin:0 auto;padding:28px 0 60px}.hero,.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.06)}
+.hero{padding:34px}h1{margin:0;text-align:center;font-size:clamp(30px,4vw,52px);line-height:1.05}.description{max-width:920px;margin:18px auto 0;text-align:center;font-style:italic;color:var(--muted);font-size:18px}
+.stats{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 15px;margin-top:22px;font-weight:700;font-size:15px}.key{margin-top:24px;background:var(--green-light);border:1px solid #cde8da;border-radius:12px;padding:16px 18px;display:flex;flex-wrap:wrap;gap:12px 22px;align-items:center}
+.toolbar{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-top:16px;flex-wrap:wrap}button{border:0;background:var(--green);color:#fff;padding:10px 16px;border-radius:8px;font-weight:700;cursor:pointer}
+.qrbox{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.qrbox img{width:120px;height:120px;border:8px solid white;box-shadow:0 2px 10px rgba(0,0,0,.12)}
+.grid{display:grid;grid-template-columns:1fr 1.45fr;gap:22px;margin-top:24px}.card{padding:24px}.section{margin-top:24px}h2{margin:0 0 16px;font-size:28px;line-height:1.15}h2.green{color:var(--green)}h2.blue{color:var(--blue)}h3{margin:20px 0 8px;font-size:20px}
+ol.shopping{margin:0;padding-left:24px}ol.shopping li{margin-bottom:8px;padding-left:4px}ul{margin:6px 0 0;padding-left:22px}ul li{margin-bottom:7px}.ingredients-columns{display:grid;grid-template-columns:1fr 1fr;gap:22px}.timeline p{margin:0 0 12px}
+.step{border-top:1px solid var(--line);padding-top:18px;margin-top:18px}.step:first-of-type{border-top:0;padding-top:0}.label{font-weight:700}.tip{background:var(--warning);border-left:4px solid #e6b800;padding:10px 12px;margin:10px 0;border-radius:6px}
+.notes-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.warning{margin-top:18px;background:var(--warning);border:1px solid #ead98a;border-radius:10px;padding:14px}
+table{width:100%;border-collapse:collapse;margin-top:12px;background:#fff}th,td{border:1px solid #cfd6df;padding:10px;text-align:center}th{background:#374151;color:#fff}tr:nth-child(even) td{background:#f5f7fa}
+footer{margin-top:30px;text-align:center;color:var(--muted);font-size:13px}@media(max-width:900px){.grid,.ingredients-columns,.notes-grid{grid-template-columns:1fr}}@media print{body{background:white}.toolbar button{display:none}.wrap{width:100%;padding:0}.hero,.card{box-shadow:none;break-inside:avoid}.card{margin-bottom:12px}}
+</style>
+</head>
+<body><div class="wrap">
+
+<section class="hero">
+<h1>ULTIMATE BAKERY-STYLE TWIX CARAMEL LAVA COOKIES</h1>
+<p class="description">A thick bakery-style brown-butter cookie loaded with real Twix flavours: toasted milk powder, crushed Twix biscuit through the dough, molten milk-chocolate-and-caramel Twix pieces, and a frozen Twix caramel cream lava centre. Finished with a soft-set caramel cream drizzle, crushed Twix biscuit, a small piece of Twix and a tiny touch of flaky sea salt.</p>
+<div class="stats"><span>Preparation: 60–75 minutes active</span><span>|</span><span>Bake: 12–15 minutes</span><span>|</span><span>Chilling: Overnight recommended</span><span>|</span><span>Total: Approx. 24 hours</span><span>|</span><span>Yield: 12 large cookies</span><span>|</span><span>Half batch: 6</span></div>
+<div class="key"><strong>KEY:</strong><span>🕒 Can Be Prepared In Advance</span><span>🥶 Refrigerate</span><span>❄️ Freeze</span><span>🔥 Reheat Before Use</span><span>💡 Professional Baker's Tip</span></div>
+<div class="toolbar"><button onclick="window.print()">Print Recipe</button>
+<div class="qrbox"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATIAAAEyAQAAAABRvWFoAAADYElEQVR4nO1aUWorMQwcxYZ+ytAD5CjeG/RIpUfqDbRHyQEK3s+AzLwPebf9fIWULaYhhM1mIBpkrWZkC/E/r/XyXzDgD/eHOxm3iogU9LKKSN6WLkveFikA1i4iIufG91AcSCPpytRqvF0NSjakVl1JGmm/ncd3cF0EWO8F0Ld+fUu3V9+kXw0AsEo5O75H4vKX65Xbgm3x63tqL+n24tt6enw/xzcDQLWtZCzJTYBefu5/z8QlEoCrZaBfjbRewIYnEqhsZ8f3aJyIRJrv1zcAvcCx9qvdy4pNRJaT43skDhwvY6upxR1zAGpsn7/+dh7f6UcOQBlkXQ1jhddExk9z8d07LwklANJGohtIizu/ncd38hvZdGWiQZlaBWqiQQ2oqdXZ+DbEQ3ivXwJgg8ed6dZz5BGoUELNURMZYjKSOxHfDKzpVtJHSR/F88KtpPaCraDUpw9JQPYz4/uR57PyKFtXY0N8AnC1+erX1eLhHNxTg6ul8E0AdKb1PDqOA76XMFt03koykWkqvXHBeDqN72xrVgPWDORNsC33sp4b30NxIKPtmqMeK9lROcqZ8/Wj1LCzs9RqCn2lllqFGmbTV2Mi6/plVX9xgnP5hQvGCMvSbcGumfO2RAmTJlPV7yV49QK5vrlaVusF9wI29IJe4NvrufE9FIdostF5j2mkq+0t2Kbsv9jrNEU7VrLVw0TMxXe4IdKg9MMYooZVnMsvHPpqqCnf21AozBDVk/GNhIZU/jK5Mkf1HfPbeXyHLxscNd6JxlYdFUpXhpWYiy8TLdFcLfaSxjAHdVjFGfMLpQNsNVg76uhEE9YvY3qDfRLratDhIMIkTsY30upjcvW5qiP1c+nnfcLcRqIdCEcMVI6R3WT1yyhYoI5rZVQxDqM0D98MQAC2QkAAf26i66Loz++e0Z/bufH9VP9VpoZ0aGaOyTMAzjafHDuAAPYWHDssh6ieST9f9vM5FcqnBpGlF9xFSEr4X9Rz43s4jqRj5W3p8ur7LhKwxnXelpPjeyQuA+gZDvRSPa/QdwFcm6CugADJZ5rnjP3u8AVpGAfscprTzSc/z+c41vszc3t5auUu1RoESA2eZ6rfz/N1rnTUOFYXad29/4R6EmoxeB9TaD30pM3Vf+Xv/PMfbiLcPyKNOtwScVQDAAAAAElFTkSuQmCC" alt="QR code for this recipe"><div><strong>Scan to open this recipe</strong><br><small>https://daniellecorizzo3007-ui.github.io/my-recipe-box/recipes/ultimate-bakery-style-twix-caramel-lava-cookies.html</small></div></div></div>
+</section>
+
+<section class="grid">
+<div class="card"><h2>SHOPPING LIST — 12 COOKIES</h2><ol class="shopping">
+<li>250g Unsalted Butter</li><li>15g Full-Cream Milk Powder</li><li>300g Plain Flour / T-400 Brašno</li><li>40g Finely Crushed Twix Biscuit</li><li>20g Cornstarch / Gustin</li><li>¾ tsp Baking Soda</li><li>½ tsp Baking Powder</li><li>¾ tsp Fine Sea Salt</li><li>1 tsp Instant Espresso Powder</li><li>100g White Sugar — dough</li><li>160g Light Brown Sugar</li><li>1 Large Egg</li><li>1 Extra Egg Yolk</li><li>15ml Vanilla Extract / 3 tsp</li><li>180g Twix Chocolate/Caramel Pieces — dough</li><li>100g Twix Chocolate/Caramel Pieces — centre</li><li>70g White Sugar — centre</li><li>15g Unsalted Butter — centre</li><li>70g Thickened/Heavy Cream — centre</li><li>70g Milk Chocolate — centre</li><li>50g White Sugar — drizzle</li><li>10g Unsalted Butter — drizzle</li><li>50g Thickened/Heavy Cream — drizzle</li><li>90g White Chocolate — drizzle</li><li>30g Extra Crushed Twix Biscuit — decoration</li><li>12 Small Twix Pieces — decoration</li><li>Flaky Sea Salt</li></ol>
+<p><strong>Twix quantity to buy:</strong> approximately 600–650g total.</p></div>
+
+<div class="card"><h2>INGREDIENTS BY STEP</h2><div class="ingredients-columns">
+<div><h3>Brown Butter</h3><ul><li>250g Unsalted Butter</li><li>15g Full-Cream Milk Powder</li></ul><p><strong>Expected Yield:</strong> approximately 223–225g browned butter with toasted milk solids retained.</p>
+<h3>Cookie Dough</h3><ul><li>223–225g Prepared Brown Butter</li><li>100g White Sugar</li><li>160g Light Brown Sugar</li><li>1 Large Egg</li><li>1 Extra Egg Yolk</li><li>15ml Vanilla Extract / 3 tsp</li><li>300g Plain Flour</li><li>40g Finely Crushed Twix Biscuit</li><li>20g Cornstarch</li><li>¾ tsp Baking Soda</li><li>½ tsp Baking Powder</li><li>¾ tsp Fine Sea Salt</li><li>1 tsp Espresso Powder</li><li>180g Twix Chocolate/Caramel Pieces</li></ul></div>
+<div><h3>Twix Caramel Lava Centres</h3><ul><li>70g White Sugar</li><li>15g Unsalted Butter</li><li>70g Warmed Thickened/Heavy Cream</li><li>70g Milk Chocolate</li><li>100g Twix Chocolate/Caramel Pieces</li><li>Tiny Pinch Fine Sea Salt</li></ul>
+<h3>Soft-Set Caramel Drizzle</h3><ul><li>50g White Sugar</li><li>10g Unsalted Butter</li><li>50g Warmed Thickened/Heavy Cream</li><li>90g White Chocolate</li><li>Tiny Pinch Fine Sea Salt</li></ul>
+<h3>Garnish</h3><ul><li>30g Crushed Twix Biscuit</li><li>12 Small Twix Pieces</li><li>Flaky Sea Salt</li></ul></div>
+</div></div></section>
+
+<section class="card section"><h2 class="green">SERVING TIMELINES</h2><div class="timeline">
+<p><strong>Ultimate Method:</strong> Approx. 24 hours. Prepare centres and dough on Day 1; stuff, bake and decorate on Day 2.</p>
+<p><strong>Same-Day Method:</strong> Allow approximately 7–8 hours. Freeze centres at least 4 hours and chill dough at least 4 hours.</p>
+<p><strong>Best Result:</strong> Overnight centre freezing plus 12–24 hours dough rest.</p>
+</div></section>
+
+<section class="card section"><h2 class="green">ADVANCE PREPARATION STEPS</h2>
+<div class="step"><h3>STEP A1 – Brown Butter & Toast Milk Powder 🕒🥶</h3><ul><li>Place 250g butter in a light-coloured saucepan over medium heat.</li><li>Once melted and foaming, add 15g milk powder.</li><li>Whisk continuously until the butter smells nutty and the milk solids become golden-hazelnut brown.</li><li>Immediately transfer everything to a heatproof bowl, retaining all toasted milk solids.</li><li>Cool completely before use.</li></ul><p><span class="label">Storage:</span> Refrigerate airtight up to 7 days.</p></div>
+
+<div class="step"><h3>STEP A2 – Prepare Twix Components 🕒🥶</h3><ul><li>Chill or partially freeze Twix bars before separating and chopping.</li><li>Prepare 40g finely crushed biscuit for the dough and 30g slightly coarser crumbs for decoration.</li><li>Prepare 180g chocolate/caramel pieces for dough, 100g for centres and 12 small pieces for decoration.</li><li>Keep prepared components refrigerated until needed.</li></ul><div class="tip">💡 Professional Baker's Tip: Use a mixture of small, medium and larger Twix chocolate/caramel pieces so some melt into the dough while others remain as obvious molten pockets.</div></div>
+
+<div class="step"><h3>STEP A3 – Twix Caramel Lava Centres 🕒❄️</h3><ul><li>Heat 70g white sugar over medium-low heat until melted and medium amber.</li><li>Remove briefly from heat and carefully add 15g butter.</li><li>Slowly stir in 70g warmed cream; return briefly to low heat if needed until smooth.</li><li>Remove from heat and add 70g milk chocolate plus a tiny pinch of salt.</li><li>Rest 30 seconds, then stir until silky.</li><li>Cool 5–10 minutes, then fold through 100g chopped Twix chocolate/caramel pieces.</li><li>Cool until thick enough to portion.</li><li>Make 12 centres of approximately 20–22g each and freeze until completely solid.</li></ul><p><span class="label">Best:</span> Freeze overnight. <span class="label">Minimum:</span> 4 hours.</p></div>
+
+<div class="step"><h3>STEP A4 – Soft-Set Caramel Drizzle 🕒🥶🔥</h3><ul><li>Caramelise 50g white sugar to medium amber.</li><li>Remove from heat and add 10g butter.</li><li>Slowly stir in 50g warmed cream.</li><li>Return briefly to low heat if required until smooth.</li><li>Pour immediately over 90g finely chopped white chocolate.</li><li>Rest 1 minute, stir until silky and add a tiny pinch of fine sea salt.</li><li>Cool before storing.</li></ul><p><span class="label">Storage:</span> Refrigerate airtight for approximately 3–4 days.</p><p><span class="label">Before Use:</span> Warm very gently until thick but drizzleable.</p></div>
+</section>
+
+<section class="card section"><h2 class="blue">METHOD</h2>
+<div class="step"><h3>STEP 1 – Prepare Brown Butter</h3><ul><li>If prepared ahead, soften the browned butter until cool-room-temperature consistency.</li><li>It should be soft enough to mix but not warm or liquid.</li></ul></div>
+<div class="step"><h3>STEP 2 – Add Sugars</h3><ul><li>Beat 223–225g prepared browned butter with 100g white sugar and 160g light brown sugar for approximately 1–2 minutes until glossy and evenly combined.</li></ul></div>
+<div class="step"><h3>STEP 3 – Add Egg, Yolk & Vanilla</h3><ul><li>Add 1 large egg, 1 extra egg yolk and 15ml vanilla extract.</li><li>Whisk until smooth, glossy and emulsified.</li></ul><div class="tip">💡 Do not add vanilla while the butter is actively browning; adding it here preserves the vanilla aroma.</div></div>
+<div class="step"><h3>STEP 4 – Add Dry Ingredients</h3><ul><li>Whisk together 300g plain flour, 40g finely crushed Twix biscuit, 20g cornstarch, ¾ tsp baking soda, ½ tsp baking powder, ¾ tsp fine sea salt and 1 tsp espresso powder.</li><li>Fold the dry mixture into the wet ingredients only until a few tiny flour streaks remain.</li><li>Fold through 180g prepared Twix chocolate/caramel pieces.</li></ul><div class="tip">💡 The espresso should not taste like coffee; it is included only to deepen the milk-chocolate and caramel flavours.</div></div>
+<div class="step"><h3>STEP 5 – Chill Dough</h3><ul><li>Cover tightly and refrigerate at least 4 hours.</li><li>12 hours is better; 24 hours is best.</li><li>Up to 48 hours is acceptable.</li></ul></div>
+<div class="step"><h3>STEP 6 – Stuff & Freeze</h3><ul><li>Divide dough into 12 equal portions.</li><li>Flatten each into a thick disc and place one fully frozen Twix caramel centre in the middle.</li><li>Wrap dough completely around the centre and seal every seam.</li><li>Shape into a tall, rough bakery-style ball; do not flatten.</li><li>Freeze stuffed cookies for approximately 30–60 minutes before baking.</li></ul><div class="tip">💡 If any filling is exposed or the dough looks thin, patch with extra dough before freezing.</div></div>
+<div class="step"><h3>STEP 7 – Bake</h3><ul><li>Preheat oven to 180°C Fan OR 190°C Conventional.</li><li>Line a heavy baking tray with baking paper.</li><li>Place cookies well apart.</li><li>Bake for approximately 12–15 minutes.</li><li>Cookies are ready when edges are golden and set, tops are lightly golden and centres still look slightly underdone.</li><li>Immediately after baking, lightly bang the tray once against the bench for a crinkled bakery surface.</li><li>Cool on the tray for approximately 15 minutes before moving.</li></ul><div class="tip">💡 Do not overbake. Residual heat continues cooking the cookies while they cool.</div></div>
+<div class="step"><h3>STEP 8 – Decorate</h3><ul><li>Warm the caramel drizzle gently until it falls from a spoon in thick ribbons.</li><li>Drizzle thin ribbons over almost completely cooled cookies.</li><li>Immediately sprinkle with crushed Twix biscuit.</li><li>Add one small Twix piece slightly off-centre on each cookie.</li><li>Finish with 2–4 tiny flakes of flaky sea salt.</li><li>Allow 15–30 minutes for the topping to soft-set.</li></ul></div>
+</section>
+
+<section class="card section"><h2>NOTES</h2><div class="notes-grid">
+<div><h3>Reheating & Serving</h3><ul><li><strong>Freshly Baked:</strong> Rest 15–20 minutes before serving.</li><li><strong>Day 2:</strong> Microwave 8–12 seconds, then rest 1 minute.</li><li><strong>Refrigerated:</strong> Microwave 12–15 seconds, then rest 1 minute.</li><li><strong>Frozen Baked Cookie:</strong> Thaw first, then microwave 10–15 seconds.</li></ul>
+<h3>Storage</h3><ul><li>Room temperature: approximately 3 days airtight.</li><li>Refrigerator: approximately 5 days.</li><li>Frozen unbaked stuffed cookies: up to 3 months.</li><li>Frozen centres: approximately 1 month.</li></ul>
+<h3>Ideal Finished Cookie</h3><p>Golden, slightly crisp and crinkled outside; soft and chewy inside; molten Twix pockets throughout; and a thick Twix caramel cream centre that slowly oozes when warm.</p></div>
+<div><h3>Serbian Ingredient Guide</h3><ul><li>Unsalted Butter = Neslani puter</li><li>Full-Cream Milk Powder = Punomasno mleko u prahu</li><li>Plain Flour = T-400 brašno</li><li>Cornstarch = Gustin / kukuruzni skrob</li><li>Brown Sugar = Braon šećer</li><li>White Sugar = Beli / kristal šećer</li><li>Baking Soda = Soda bikarbona</li><li>Baking Powder = Prašak za pecivo</li><li>Fine Sea Salt = Fina morska so</li><li>Flaky Sea Salt = Krupna morska so u listićima</li><li>Vanilla Extract = Ekstrakt vanile</li><li>Espresso Powder = Instant espresso kafa u prahu</li><li>Heavy / Whipping Cream = Slatka pavlaka / pavlaka za šlag</li><li>Milk Chocolate = Mlečna čokolada</li><li>White Chocolate = Bela čokolada</li><li>Twix = Twix čokoladica</li></ul>
+<h3>Brown Sugar Tip for Serbia</h3><p>If the brown sugar is unusually dry, mix 160g brown sugar with approximately 1 tsp honey before using.</p>
+<h3>Troubleshooting</h3><ul><li>Filling leaks: centre was not fully frozen, dough was too thin or seams were not sealed.</li><li>Centre not gooey: warm cookie briefly before serving.</li><li>Cookie spreads too much: stuffed dough was not cold enough.</li><li>Cookie is dry: it was overbaked.</li><li>Drizzle too soft: allow it to cool fully and avoid overheating.</li><li>Caramel centre hard: caramel was cooked too dark before adding cream.</li></ul></div>
+</div></section>
+
+<section class="card section"><h2>MEASUREMENT CONVERSION GUIDE</h2>
+<table><thead><tr><th>Measurement</th><th>Serbia (Europe)</th><th>Australia</th><th>USA</th></tr></thead>
+<tbody><tr><td>1 tsp</td><td>5ml</td><td>5ml</td><td>5ml</td></tr><tr><td>1 tbsp</td><td>15ml</td><td>20ml</td><td>15ml</td></tr><tr><td>¼ cup</td><td>60ml</td><td>60ml</td><td>59ml</td></tr><tr><td>⅓ cup</td><td>80ml</td><td>80ml</td><td>79ml</td></tr><tr><td>½ cup</td><td>125ml</td><td>125ml</td><td>118ml</td></tr><tr><td>⅔ cup</td><td>160ml</td><td>160ml</td><td>158ml</td></tr><tr><td>¾ cup</td><td>180ml</td><td>180ml</td><td>177ml</td></tr><tr><td>1 cup</td><td>250ml</td><td>250ml</td><td>236ml</td></tr></tbody></table>
+<div class="warning"><strong>Australian Tablespoon Warning:</strong> Australia commonly uses a 20ml tablespoon, while the USA and many European recipes use a 15ml tablespoon. This recipe uses metric weights as the primary standard.</div>
+<h3>Oven Temperature Conversion</h3><table><thead><tr><th>Fan Forced</th><th>Conventional</th></tr></thead><tbody><tr><td>170°C</td><td>180°C</td></tr><tr><td>180°C</td><td>190°C</td></tr><tr><td>190°C</td><td>200°C</td></tr></tbody></table>
+</section>
+
+<footer>Project: Cookie Book • Ultimate Bakery-Style Twix Caramel Lava Cookies<br>GitHub filename: <strong>ultimate-bakery-style-twix-caramel-lava-cookies.html</strong></footer>
+</div></body></html>
