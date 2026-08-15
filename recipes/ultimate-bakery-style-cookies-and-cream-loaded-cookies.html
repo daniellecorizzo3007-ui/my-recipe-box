@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ultimate Bakery-Style Cookies &amp; Cream Loaded Cookies</title>
+<style>
+:root{--green:#0b8f4d;--green-light:#eaf7f0;--blue:#1457b8;--ink:#1f2937;--muted:#5b6472;--line:#d8dee8;--panel:#fff;--bg:#f7f4ef;--warning:#fff7d6}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+.wrap{width:min(1180px,94%);margin:0 auto;padding:28px 0 60px}.hero,.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.06)}
+.hero{padding:34px}h1{margin:0;text-align:center;font-size:clamp(30px,4vw,52px);line-height:1.05}.description{max-width:920px;margin:18px auto 0;text-align:center;font-style:italic;color:var(--muted);font-size:18px}
+.stats{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 15px;margin-top:22px;font-weight:700;font-size:15px}.key{margin-top:24px;background:var(--green-light);border:1px solid #cde8da;border-radius:12px;padding:16px 18px;display:flex;flex-wrap:wrap;gap:12px 22px;align-items:center}
+.toolbar{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-top:16px;flex-wrap:wrap}button{border:0;background:var(--green);color:#fff;padding:10px 16px;border-radius:8px;font-weight:700;cursor:pointer}
+.qrbox{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.qrbox img{width:120px;height:120px;border:8px solid white;box-shadow:0 2px 10px rgba(0,0,0,.12)}
+.grid{display:grid;grid-template-columns:1fr 1.45fr;gap:22px;margin-top:24px}.card{padding:24px}.section{margin-top:24px}h2{margin:0 0 16px;font-size:28px;line-height:1.15}h2.green{color:var(--green)}h2.blue{color:var(--blue)}h3{margin:20px 0 8px;font-size:20px}
+ol.shopping{margin:0;padding-left:24px}ol.shopping li{margin-bottom:8px;padding-left:4px}ul{margin:6px 0 0;padding-left:22px}ul li{margin-bottom:7px}.ingredients-columns{display:grid;grid-template-columns:1fr 1fr;gap:22px}.timeline p{margin:0 0 12px}
+.step{border-top:1px solid var(--line);padding-top:18px;margin-top:18px}.step:first-of-type{border-top:0;padding-top:0}.label{font-weight:700}.tip{background:var(--warning);border-left:4px solid #e6b800;padding:10px 12px;margin:10px 0;border-radius:6px}
+.notes-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.warning{margin-top:18px;background:var(--warning);border:1px solid #ead98a;border-radius:10px;padding:14px}
+table{width:100%;border-collapse:collapse;margin-top:12px;background:#fff}th,td{border:1px solid #cfd6df;padding:10px;text-align:center}th{background:#374151;color:#fff}tr:nth-child(even) td{background:#f5f7fa}
+footer{margin-top:30px;text-align:center;color:var(--muted);font-size:13px}@media(max-width:900px){.grid,.ingredients-columns,.notes-grid{grid-template-columns:1fr}}@media print{body{background:white}.toolbar button{display:none}.wrap{width:100%;padding:0}.hero,.card{box-shadow:none;break-inside:avoid}.card{margin-bottom:12px}}
+</style>
+</head>
+<body><div class="wrap">
+
+<section class="hero">
+<h1>ULTIMATE BAKERY-STYLE COOKIES &amp; CREAM LOADED COOKIES</h1>
+<p class="description">A thick brown-butter cookies-and-cream cookie packed with Oreo wafer crumbs and chunks, toasted milk powder and subtle white chocolate, wrapped around a frozen Oreo cheesecake truffle centre made with real Oreo cream. Finished with melted white chocolate, Oreo crumbs and a cream-filled Oreo quarter.</p>
+<div class="stats"><span>Preparation: 60 minutes</span><span>|</span><span>Cooking: 12–15 minutes</span><span>|</span><span>Inactive: Overnight recommended</span><span>|</span><span>Total: Approx. 25 hours</span><span>|</span><span>Yield: 12 large cookies</span><span>|</span><span>Half batch: 6</span></div>
+<div class="key"><strong>KEY:</strong><span>🕒 Can Be Prepared In Advance</span><span>🥶 Refrigerate</span><span>❄️ Freeze</span><span>🔥 Reheat Before Use</span><span>💡 Professional Baker's Tip</span></div>
+<div class="toolbar"><button onclick="window.print()">Print Recipe</button>
+<div class="qrbox"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXMAAAFzAQAAAADkwdQ/AAAEEUlEQVR4nO2cPZKrSBCEv6IVgTzkrcncpHUz4Ch7E3QTuAF4TASQa1RLmmcNs4Z2tNHpgdKoqKjKrp9GJn6CsfgRHTI/8zM/8//P/NnMzM5wa4vNzK4dm13Gayc7M14pNjMzK15lzzvzkTTVktZS6tFaSmq1lhM00kKt1l/KJA2/zf7fyb9ZAbM1rcr5MpqKMNcDXbFV03gFmM3aF9rz/+DXncLnGejYqvED9jDX6v/g/Gb7fx+/I3iGnz4vRMlF9b+z5/34X/RzqiXCAlEmTXXfSNIQlfXzh/zRzE7ArbXPaqq7lu0MUGznOXZtwaeZ2evseWM+emACCEs1gMcnUE61B2ZCjs/voIfrNNDsADQARO1QDVFaAZrsz4P86ta0pgWiFZSSzMO0K2COfVcETdDlev4I0pljK9RqTZqgsRWAPWjyaK2G2Ob4PALXxZawUPfN4+Vy/73uISzkfD+IpJ9JKnd33Q4QpZVKfbMH5XrpB/zq1ihomWPf2Zr0UxrATjA2VgDj9XX2vDPf871voNQQBaXUN7ZC3d/T3tZyIuvnMfxRfzYuo+xJTUPqnR7M7M/v8EU/1bvPgEfhWUnagzTENuvnQX41QBGW+QPYznOUCJpI+nntCj4vdaeX2fPO/D/qz540SCZocv2sBtBaasj10jGk+tN79DZ50At5oHS3erRmfx6AK2YDXrp/RbNDJQmgzvOQY3gG31Sr3YMmoredsfWy/tGEZn8ewN2fazmlQTJRtqZEf9SfdZ/rpUN46udU903qMNPTVyfn+DyEEzBfAIM6RoLmj7+RQQ0781+ikwExz+cPIVXwKdF3Hmv4IQo/j3by/ugwnvop9Q0+SvJ5cuNjkWb3JUjWz+P8Zis96z/Ps5mxVWOUsZ3n2Hds5/mDJs/njyDti31/hI/pZVoq9Y1nf6PHsZTj81uk8z0NklPhSZouu36a95vZn0f545Viq6S+Y7NL3fnthq4N0mjWEuYLsL/Mnjfm+3kU2+f+PS06gObev6+kpXyOz2+R+nfvge757hcVH/nuT/l8P4I0mN+D+8yvgabth/uz1UqV58kHkZYdtt537FPtJ1BqOwHTUkl5f3SYP5oRlvnjJp0+L9DpRJrWU/ewVdOY79Meg0dka48zJ9VLuAg85585Pg/h634zttLiJ9Czm1eef/6Qn77vqNRjp3I0M7YzdWdBs5m1Ke1z/XmU7zv2+QP2zS6PG0uk+pOwMF6719nzxvz7/t3WciL1733aJjW775IBcv9+EF/9Gdv79wjya/R+qX7HfZ39+TN+3Wmn1O2K7Ezd2R6W6mZWhKVS1s9j0PP7uCG29wz3CTJ42vt0OddLR3AfhPinB0DlE3mAdH/J0z7Xn0dg+f8EMj/zMz/z/xX/H3ac2XTg3RfmAAAAAElFTkSuQmCC" alt="QR code for this recipe"><div><strong>Scan to open this recipe</strong><br><small>https://daniellecorizzo3007-ui.github.io/my-recipe-box/recipes/ultimate-bakery-style-cookies-and-cream-loaded-cookies.html</small></div></div></div>
+</section>
+
+<section class="grid">
+<div class="card"><h2>SHOPPING LIST — 12 COOKIES</h2><ol class="shopping">
+<li>230g Unsalted Butter</li><li>20g Full-Cream Milk Powder</li><li>310g Plain Flour / T-400 Brašno</li><li>18g Cornstarch / Gustin</li><li>1 tsp Baking Soda</li><li>½ tsp Baking Powder</li><li>1 tsp Fine Sea Salt</li><li>¼ tsp Instant Espresso Powder</li><li>130g Light Brown Sugar</li><li>80g White Sugar</li><li>1 Large Egg</li><li>1 Extra Egg Yolk</li><li>3 tsp Vanilla Extract total</li><li>180g Full-Fat Cream Cheese</li><li>Approximately 30–32 standard Oreo sandwich cookies</li><li>205g White Chocolate total</li><li>Optional Flaky Sea Salt</li><li>Optional Black Cocoa Powder for future variation</li></ol></div>
+
+<div class="card"><h2>SHOPPING LIST — 6 COOKIES</h2><ol class="shopping">
+<li>115g Unsalted Butter</li><li>10g Full-Cream Milk Powder</li><li>155g Plain Flour / T-400 Brašno</li><li>9g Cornstarch / Gustin</li><li>½ tsp Baking Soda</li><li>¼ tsp Baking Powder</li><li>½ tsp Fine Sea Salt</li><li>Small pinch Instant Espresso Powder</li><li>65g Light Brown Sugar</li><li>40g White Sugar</li><li>25g Beaten Whole Egg</li><li>1 Egg Yolk</li><li>1½ tsp Vanilla Extract total</li><li>90g Full-Fat Cream Cheese</li><li>Approximately 15–16 standard Oreo sandwich cookies</li><li>Approximately 103g White Chocolate total</li><li>Optional Flaky Sea Salt</li></ol></div>
+</section>
+
+<section class="card section"><h2>INGREDIENTS BY STEP — 12 COOKIES</h2><div class="ingredients-columns">
+<div>
+<h3>Brown Butter &amp; Toasted Milk Powder</h3><ul><li>230g Unsalted Butter</li><li>20g Full-Cream Milk Powder</li></ul><p><strong>Target:</strong> approximately 185g finished browned-butter mixture. If under, top up with a little melted unsalted butter.</p>
+<h3>Cookie Dough — Wet</h3><ul><li>185g Prepared Brown Butter mixture</li><li>130g Light Brown Sugar</li><li>80g White Sugar</li><li>35g Reserved Oreo Cream Filling</li><li>1 Large Egg</li><li>1 Extra Egg Yolk</li><li>2 tsp Vanilla Extract</li></ul>
+<h3>Cookie Dough — Dry</h3><ul><li>310g Plain Flour / T-400 Brašno</li><li>18g Cornstarch / Gustin</li><li>1 tsp Baking Soda</li><li>½ tsp Baking Powder</li><li>1 tsp Fine Sea Salt</li><li>¼ tsp Instant Espresso Powder</li><li>40g Finely Crushed Oreo Wafers, cream removed</li></ul>
+<h3>Cookie Dough — Mix-Ins</h3><ul><li>70g Rough Oreo Wafer Pieces, cream removed</li><li>60g White Chocolate, chopped small</li></ul>
+</div>
+<div>
+<h3>Frozen Oreo Cheesecake Truffle Centres</h3><ul><li>180g Full-Fat Cream Cheese</li><li>55g White Chocolate, melted and slightly cooled</li><li>45g Oreo Cream Filling</li><li>65g Oreo Wafers, cream removed and crushed into small pieces</li><li>1 tsp Vanilla Extract</li><li>Small Pinch Fine Sea Salt</li></ul><p><strong>Portion:</strong> 12 centres of approximately 28–30g each.</p>
+<h3>Garnish</h3><ul><li>90g White Chocolate, melted</li><li>25–30g Oreo Wafer Crumbs</li><li>3 Whole Oreo Sandwich Cookies, cut into quarters</li><li>Optional tiny pinch Flaky Sea Salt</li></ul>
+<h3>Optional Black Cocoa Upgrade</h3><ul><li>305g Plain Flour</li><li>5g Black Cocoa Powder</li></ul><p>Use this only when black cocoa is available. It replaces 5g of the standard 310g flour and should enhance Oreo flavour without turning the dough into a chocolate cookie.</p>
+</div></div></section>
+
+<section class="card section"><h2 class="green">SERVING TIMELINES</h2><div class="timeline">
+<p><strong>Ultimate Method:</strong> Approx. 24–25 hours. Prepare brown butter, centres and dough on Day 1; freeze/chill overnight; stuff, bake and decorate on Day 2.</p>
+<p><strong>Same-Day Method:</strong> Allow approximately 7–8 hours. Freeze centres until completely solid and chill dough for at least 4 hours.</p>
+<p><strong>Fastest Serve Method:</strong> If frozen centres and stuffed cookie dough balls are already prepared, bake, rest and decorate in approximately 35–45 minutes.</p>
+<p><strong>Best Result:</strong> Overnight centre freezing plus 12–24 hours dough resting gives the best flavour, thickness and texture.</p>
+</div></section>
+
+<section class="card section"><h2 class="green">ADVANCE PREPARATION STEPS</h2>
+
+<div class="step"><h3>STEP A1 – Brown Butter &amp; Toast Milk Powder 🕒🥶</h3>
+<ul><li>Place 230g unsalted butter in a light-coloured saucepan over medium heat.</li><li>Once melted and foaming, add 20g milk powder.</li><li>Stir or whisk frequently until the butter smells nutty and the milk solids become golden-hazelnut brown.</li><li>Do not take the butter extremely dark; Oreo should remain the dominant flavour.</li><li>Immediately transfer everything, including all toasted milk solids, to a heatproof bowl.</li><li>Weigh the mixture. Target approximately 185g. If slightly under, add enough ordinary melted unsalted butter to reach 185g.</li><li>Cool until no longer hot before making the dough.</li></ul>
+<p><span class="label">Storage:</span> Refrigerate airtight for up to 7 days.</p></div>
+
+<div class="step"><h3>STEP A2 – Frozen Oreo Cheesecake Truffle Centres 🕒❄️</h3>
+<ul><li>Twist apart enough Oreos to obtain 45g cream filling and 65g wafers for the centres. Keep cream and wafers separate.</li><li>Beat 180g softened full-fat cream cheese until smooth.</li><li>Add 45g Oreo cream filling, 1 tsp vanilla and a small pinch of fine salt; mix until smooth.</li><li>Gradually mix in 55g melted and slightly cooled white chocolate.</li><li>Fold through 65g crushed Oreo wafers. Leave some small biscuit pieces rather than reducing everything to powder.</li><li>Divide into 12 portions of approximately 28–30g each and shape into compact balls or thick discs.</li><li>Freeze until completely solid. Overnight is preferred.</li></ul>
+<p><span class="label">Storage:</span> Freeze airtight for up to 1 month.</p><div class="tip">💡 Professional Baker's Tip: Fully frozen centres are essential. This keeps the cheesecake centre distinct and creamy instead of allowing it to disappear into the dough.</div></div>
+
+<div class="step"><h3>STEP A3 – Stuffed Cookie Dough Balls 🕒❄️</h3>
+<ul><li>After the dough has chilled, divide it into 12 equal portions of approximately 82–85g each.</li><li>Flatten one portion into a thick disc.</li><li>Place one completely frozen Oreo cheesecake centre in the middle.</li><li>Bring the dough around the centre and seal every seam completely.</li><li>Shape into a tall, thick dough ball rather than a flat ball.</li><li>Repeat with all cookies.</li><li>Refrigerate stuffed cookies for 30–60 minutes before baking, or freeze for later baking.</li></ul>
+<p><span class="label">Approximate stuffed weight:</span> 110–115g each before garnish.</p>
+<p><span class="label">Storage:</span> Freeze firm on a lined tray, then transfer to an airtight container or freezer bag for up to 3 months.</p>
+<div class="tip">💡 Professional Baker's Tip: If any filling is visible, patch the area with a little extra dough before chilling or freezing.</div></div>
+
+<div class="step"><h3>STEP A4 – Prepare Garnish Components 🕒</h3>
+<ul><li>Crush 25–30g Oreo wafers into garnish crumbs.</li><li>Cut 3 whole cream-filled Oreos carefully into quarters.</li><li>Store both components airtight until required.</li><li>Melt the 90g white chocolate only when ready to decorate, or melt gently and rewarm before use.</li></ul></div>
+</section>
+
+<section class="card section"><h2 class="blue">METHOD</h2>
+
+<div class="step"><h3>STEP 1 – Prepare Brown Butter (STEP A1)</h3><ul>
+<li>Prepare the brown butter and toasted milk powder exactly as described in STEP A1.</li>
+<li>Allow the finished 185g mixture to cool until warm rather than hot.</li></ul></div>
+
+<div class="step"><h3>STEP 2 – Prepare &amp; Freeze Centres (STEP A2)</h3><ul>
+<li>Prepare the 12 Oreo cheesecake truffle centres exactly as described in STEP A2.</li>
+<li>Freeze until completely solid, preferably overnight.</li></ul></div>
+
+<div class="step"><h3>STEP 3 – Mix Wet Ingredients</h3><ul>
+<li>Add 130g light brown sugar, 80g white sugar and 35g reserved Oreo cream filling to the cooled browned butter.</li>
+<li>Whisk thoroughly until glossy and evenly combined.</li>
+<li>Add 1 large egg, 1 extra egg yolk and 2 tsp vanilla extract.</li>
+<li>Whisk until smooth, slightly thickened and glossy.</li></ul>
+<div class="tip">💡 Professional Baker's Tip: Add vanilla after the butter has finished browning. Heating vanilla during browning drives off much of its aroma.</div></div>
+
+<div class="step"><h3>STEP 4 – Mix Dry Ingredients</h3><ul>
+<li>In a separate bowl whisk together 310g plain flour, 18g cornstarch, 1 tsp baking soda, ½ tsp baking powder, 1 tsp fine salt and ¼ tsp espresso powder.</li>
+<li>Add 40g finely crushed Oreo wafer crumbs and whisk until evenly distributed.</li>
+<li>The espresso should not be detectable as coffee; it only supports the cocoa flavour of the Oreo wafers.</li></ul></div>
+
+<div class="step"><h3>STEP 5 – Make &amp; Rest the Dough</h3><ul>
+<li>Add the dry mixture to the wet mixture and fold until almost combined.</li>
+<li>Add 70g rough Oreo wafer pieces and 60g chopped white chocolate.</li>
+<li>Fold only until evenly distributed. Do not overmix.</li>
+<li>The dough should be thick, soft, heavily speckled with Oreo and visibly chunky, but should not resemble a full chocolate-cookie dough.</li>
+<li>Cover tightly and refrigerate for at least 4 hours; overnight is preferred.</li></ul></div>
+
+<div class="step"><h3>STEP 6 – Stuff the Cookies (STEP A3)</h3><ul>
+<li>Divide chilled dough into 12 equal portions of approximately 82–85g each.</li>
+<li>Flatten each portion into a thick disc.</li>
+<li>Place one completely frozen centre into the middle.</li>
+<li>Wrap the dough completely around the centre and seal every seam.</li>
+<li>Roll gently into tall, thick dough balls.</li>
+<li>Chill the stuffed cookies for 30–60 minutes before baking.</li></ul>
+<div class="tip">💡 Professional Baker's Tip: Tall dough balls encourage a thicker bakery-style cookie and help protect the creamy centre.</div></div>
+
+<div class="step"><h3>STEP 7 – Bake</h3><ul>
+<li>Preheat oven to 180°C Fan OR 190°C Conventional.</li>
+<li>Line baking trays with baking paper.</li>
+<li>Place cookies well spaced apart.</li>
+<li>Bake chilled cookies for 12–15 minutes.</li>
+<li>If baking directly from frozen, use 170°C Fan OR 180°C Conventional and allow approximately 15–18 minutes, checking from 15 minutes.</li>
+<li>The edges should be set and the tops beginning to crack while the centres still look slightly underdone.</li>
+<li>Immediately after baking, use a large round cookie cutter or bowl to gently circle each cookie for a neat bakery shape.</li>
+<li>Allow cookies to rest on the tray for 15–20 minutes before moving or decorating.</li></ul>
+<div class="tip">💡 Professional Baker's Tip: Do not wait for the centres to look fully baked. Residual heat continues cooking the cookies while they rest.</div></div>
+
+<div class="step"><h3>STEP 8 – Decorate (STEP A4)</h3><ul>
+<li>Melt 90g white chocolate gently until smooth.</li>
+<li>Add a small irregular dollop or drizzle to each cookie.</li>
+<li>Immediately sprinkle with Oreo wafer crumbs.</li>
+<li>Press one quarter of a whole cream-filled Oreo slightly off-centre into each cookie.</li>
+<li>If desired, add only a tiny pinch of flaky sea salt.</li>
+<li>Allow the topping to soft-set before storing.</li></ul></div>
+</section>
+
+<section class="card section"><h2>NOTES</h2><div class="notes-grid">
+<div>
+<h3>Reheating &amp; Serving</h3><ul>
+<li><strong>Freshly Baked:</strong> Rest 15–20 minutes. The centre should be soft, creamy and truffle-like rather than liquid.</li>
+<li><strong>Day 2:</strong> Microwave approximately 8–12 seconds, then rest 1 minute.</li>
+<li><strong>Refrigerated:</strong> Microwave approximately 12–15 seconds, then rest 1 minute.</li>
+<li><strong>Frozen Baked Cookie:</strong> Thaw first, then microwave approximately 10–15 seconds.</li>
+<li><strong>Best serving temperature:</strong> Slightly warm, so the centre is soft while the cookie still retains structure.</li></ul>
+
+<h3>Storage</h3><ul>
+<li>Because the cookies contain a cream-cheese centre, refrigerate baked cookies once fully cooled.</li>
+<li>Refrigerator: approximately 4–5 days in an airtight container.</li>
+<li>Frozen unbaked stuffed dough balls: up to 3 months.</li>
+<li>Frozen Oreo cheesecake centres: up to 1 month.</li>
+<li>For best texture, bring refrigerated cookies closer to room temperature or warm briefly before serving.</li></ul>
+
+<h3>Ideal Finished Cookie</h3>
+<p>Thick and softly set outside, chewy through the middle, packed with unmistakable Oreo wafer flavour and small creamy white-chocolate pockets, with a soft Oreo cheesecake truffle centre that remains visibly distinct when the cookie is broken open.</p>
+</div>
+
+<div>
+<h3>Serbian Ingredient Guide</h3><ul>
+<li>Unsalted Butter = Neslani puter</li>
+<li>Full-Cream Milk Powder = Punomasno mleko u prahu</li>
+<li>Plain Flour = T-400 brašno</li>
+<li>Cornstarch = Gustin / kukuruzni skrob</li>
+<li>Brown Sugar = Braon šećer</li>
+<li>White Sugar = Beli / kristal šećer</li>
+<li>Baking Soda = Soda bikarbona</li>
+<li>Baking Powder = Prašak za pecivo</li>
+<li>Fine Sea Salt = Fina morska so</li>
+<li>Flaky Sea Salt = Krupna morska so u listićima</li>
+<li>Vanilla Extract = Ekstrakt vanile</li>
+<li>Espresso Powder = Instant espresso kafa u prahu</li>
+<li>Full-Fat Cream Cheese = Punomasni krem sir / Philadelphia</li>
+<li>White Chocolate = Bela čokolada</li>
+<li>Oreo = Oreo keks</li></ul>
+
+<h3>Brown Sugar Tip for Serbia</h3>
+<p>If the brown sugar available is unusually dry, mix the 130g brown sugar with approximately ¾ tsp honey before using. Rub it together until evenly moistened.</p>
+
+<h3>Troubleshooting</h3><ul>
+<li><strong>Filling leaks:</strong> Centre was not completely frozen, dough layer was too thin, or a seam was not fully sealed.</li>
+<li><strong>Centre disappears into dough:</strong> Freeze centres more thoroughly and avoid overbaking.</li>
+<li><strong>Cookies spread too much:</strong> Dough or stuffed cookies were too warm before baking.</li>
+<li><strong>Cookies stay too thick:</strong> Let chilled dough sit for a few minutes before stuffing, or press the tall dough ball very slightly before baking.</li>
+<li><strong>Cookies taste too sweet:</strong> Keep the white chocolate quantity restrained and ensure most Oreo pieces added to the dough have had the cream removed.</li>
+<li><strong>Centre too firm:</strong> Warm the baked cookie briefly before serving; on the next batch the centre white chocolate can be reduced slightly.</li></ul>
+
+<h3>Optional Black Cocoa Upgrade</h3>
+<p>When black cocoa becomes available, replace 5g of the 310g plain flour with 5g black cocoa. Do not add it on top of the flour amount. The goal is to deepen authentic Oreo-wafer flavour without creating a full chocolate dough.</p>
+</div></div></section>
+
+<section class="card section"><h2>MEASUREMENT CONVERSION GUIDE</h2>
+<table><thead><tr><th>Measurement</th><th>Serbia / Europe</th><th>Australia</th><th>USA</th></tr></thead>
+<tbody><tr><td>1 tsp</td><td>5ml</td><td>5ml</td><td>5ml</td></tr><tr><td>1 tbsp</td><td>15ml</td><td>20ml</td><td>15ml</td></tr><tr><td>¼ cup</td><td>60ml</td><td>60ml</td><td>59ml</td></tr><tr><td>⅓ cup</td><td>80ml</td><td>80ml</td><td>79ml</td></tr><tr><td>½ cup</td><td>125ml</td><td>125ml</td><td>118ml</td></tr><tr><td>⅔ cup</td><td>160ml</td><td>160ml</td><td>158ml</td></tr><tr><td>¾ cup</td><td>180ml</td><td>180ml</td><td>177ml</td></tr><tr><td>1 cup</td><td>250ml</td><td>250ml</td><td>236ml</td></tr></tbody></table>
+<div class="warning"><strong>Australian Tablespoon Warning:</strong> Australia commonly uses a 20ml tablespoon, while the USA and many European recipes use a 15ml tablespoon. Metric weights are the primary standard for this recipe.</div>
+<h3>Oven Temperature Conversion</h3><table><thead><tr><th>Fan Forced</th><th>Conventional</th></tr></thead><tbody><tr><td>170°C</td><td>180°C</td></tr><tr><td>180°C</td><td>190°C</td></tr><tr><td>190°C</td><td>200°C</td></tr></tbody></table>
+</section>
+
+<footer>Project: Cookie Book • Ultimate Bakery-Style Cookies &amp; Cream Loaded Cookies<br>GitHub filename: <strong>ultimate-bakery-style-cookies-and-cream-loaded-cookies.html</strong></footer>
+</div></body></html>
